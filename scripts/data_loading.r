@@ -28,4 +28,6 @@ setkey(snp_list, contract_name)
 
 full_data <- merge(snp_list, raw_data)
 
-saveRDS(full_data, "snp_data.Rdata")
+write.csv(full_data, file = "snp_data.csv", row.names = F)
+
+
